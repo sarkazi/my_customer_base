@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>portfolio</title>
+
+   <link rel="stylesheet" href="css/style.css" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta charset="UTF-8">
+
+
+
+</head>
+
+<body>
+   <div class="newclient">
+      <div class="newclient__container _container">
+         <h2 class="newclient__title _title">Новый покупатель:</h2>
+         <div class="newclient__body">
+            <form id="formInputs" class="newclient__input-body" method="get">
+               <input class="newclient__name newclient-input" type="text" placeholder="Имя">
+               <input class="newclient__counter newclient-input" type="text" placeholder="Количество ягоды (л)">
+               <input class="newclient__city newclient-input" type="text" placeholder="Город">
+               <input class="newclient__adress newclient-input" type="text" placeholder="Адрес">
+               <input class="newclient__phone newclient-input" type="text" placeholder="Телефон">
+               <input class="newclient__source newclient-input" type="text" placeholder="Источник">
+            </form>
+            <button class="newclient__btn" form="formInputs">Добавить</button>
+         </div>
+      </div>
+   </div>
+   <div class="base">
+      <div class="base__container _container">
+         <div class="base__title-block">
+            <h2 class="base__title _title">Мои покупатели:</h2>
+            <button class="base__filter-btn">
+               <img src="img/cart-icon/filter.png" alt="">
+               <div class="base__filter-items">
+                  <a id="filter-undone" href="#" class="base__filter-item">Только незавершённые</a>
+                  <a id="filter-done" href="#" class="base__filter-item">Только завершённые</a>
+                  <a id="filter-all" href="#" class="base__filter-item">Все клиенты</a>
+               </div>
+            </button>
+         </div>
+         <div class="base__body">
+            <div class="base__points points-base">
+               <h4 class="points-base__name points-base__item">клиент</h4>
+               <h4 class="points-base__counter points-base__item">кол-во</h4>
+               <h4 class="points-base__city points-base__item">город</h4>
+               <h4 class="points-base__adress points-base__item">адрес</h4>
+               <h4 class="points-base__phone points-base__item">телефон</h4>
+               <h4 class="points-base__source points-base__item">ист.</h4>
+               <h4 class="points-base__price points-base__item">сумма</h4>
+               <h4 class="points-base__status points-base__item">статус</h4>
+            </div>
+            <div class="base__empty">
+               <h3 class="base__body-title">Список пуст</h3>
+            </div>
+         </div>
+         <div class="base__final final-base">
+            <h2 class="final-base__title _title">Заработок:</h2>
+            <div class="final-base__body">
+               0 руб.
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+</body>
+
+<script src=" js/script.js">
+</script>
+
+</html>
